@@ -34,9 +34,7 @@ class Cell:
         """
         method returning a status character of our choice to print on the board
         """
-        if self.is_alive():
-            return 'O'
-        return '.'
+        return 'O' if self.is_alive() else '.'
 
 
 class Board:
